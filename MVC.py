@@ -1,5 +1,6 @@
 import os
 import subprocess
+import shutil
 from datetime import datetime
 import configparser  # Add this import
 import tkinter as tk
@@ -76,7 +77,9 @@ class VideoConcatenator:
         unique_name = f"output_{earliest_date.strftime('%Y%m%d')}_{latest_date.strftime('%Y%m%d')}.mp4"
 
         # Output file paths
-        output_file = os.path.join(sd_card_path, unique_name)
+        output_folder = os.path.join(os.path.expanduser("~"), "Videos", "MVC_Output")
+        os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
+        output_file = os.path.join(output_folder, unique_name)
         backup_path = self.get_backup_path()  # Fetch backup path from config
         backup_file = os.path.join(backup_path, unique_name)
 
@@ -88,7 +91,7 @@ class VideoConcatenator:
 
         # Save duplicate copy to the backup path
         os.makedirs(backup_path, exist_ok=True)
-        os.rename(output_file, backup_file)
+        shutil.copy2(output_file, backup_file)
 
         # Remove file_list.txt after processing
         os.remove(file_list_path)
