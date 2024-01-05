@@ -5,6 +5,7 @@ This Python script automates the process of combining video files and creating b
 ## Requirements
 
 - Python 3
+- TKinter
 - FFmpeg installed (download from [here](https://ffmpeg.org/download.html))
 
 ## Usage
