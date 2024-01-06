@@ -1,6 +1,7 @@
 # MMBs Video Concatenator
 
-This Python script automates the process of combining video files and creating backups.
+This Python script creates a simple UI for concatenating video files from a SD card to a single mp4 file ordered by date.
+It also automatically creates a backup of it on an external drive and is able to delete all files from the SD card afterwards.
 
 ## Requirements
 
@@ -12,9 +13,9 @@ This Python script automates the process of combining video files and creating b
 
 1. Clone or download this repository.
 
-2. Install Python and FFmpeg if not already installed.
+2. Install Python, TKinter and FFmpeg if not already installed.
 
-3. Set up the configuration file (`MVC.cfg`) with the desired backup path.
+3. Set up the configuration file (`MVC.cfg`) with the desired backup path, for instance your external hard drive.
 
 4. Run the script using the provided batch file (`MVC.bat`) on windows or use `python3 MVC.py` in the terminal.
 
