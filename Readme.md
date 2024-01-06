@@ -23,6 +23,8 @@ It is designed for inexperienced home video filmers who just want to merge and s
 ## Configuration
 
 - **MVC.cfg**: Edit this configuration file to set the backup path.
+  Ideally this should be an external hard drive or a mounted cloud storage.
+  Make sure that sufficient amount of storage space is available!
 
 ## Notes
 
