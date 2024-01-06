@@ -2,7 +2,7 @@
 
 This Python script creates a simple UI for concatenating video files from a SD card to a single mp4 file ordered by date.
 It also automatically creates a backup of it on an external drive and is able to delete all files from the SD card afterwards.
-It is designed for inexperienced home video filmers who just want to merge and save their clips once a month.
+It is designed for inexperienced home video filmers who just want to merge and save their clips once a month. On screen messages are in german!
 
 ## Requirements
 
